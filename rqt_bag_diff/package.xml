@@ -1,0 +1,36 @@
+<package>
+  <name>rqt_bag_diff</name>
+  <version>0.0.1</version>
+  <description>rqt_bag_diff provides a GUI plugin for performing diff like operations with ROS bag files.</description>
+  <maintainer email="ablasdel@willowgarage.com">Aaron Blasdel</maintainer>
+  <maintainer email="isao.saito@mavs.uta.edu">Isaac Saito</maintainer>
+  <maintainer email="mjyc@cs.washington.edu">Michale Jae-Yoon Chung</maintainer>
+
+  <!-- <license>BSD</license> -->
+  <license>TODO</license>
+
+  <!-- <url type="website">http://ros.org/wiki/rqt_bag</url>
+  <url type="repository">https://github.com/ros-visualization/rqt_common_plugins</url>
+  <url type="bugtracker">https://github.com/ros-visualization/rqt_common_plugins/issues</url> -->
+
+  <author email="ablasdel@willowgarage.com">Aaron Blasdel</author>
+  <author>Tim Field</author>
+  <author email="mjyc@cs.washington.edu">Michael Jae-Yoon Chung</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>python-rospkg</run_depend>
+  <run_depend>rosbag</run_depend>
+  <run_depend>rosgraph_msgs</run_depend>
+  <run_depend>roslib</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend version_gte="0.2.12">rqt_gui</run_depend>
+  <run_depend>rqt_gui_py</run_depend>
+
+  <!-- <buildtool_depend>elevator_data_collector</buildtool_depend>
+  <run_depend>elevator_data_collector</run_depend> -->
+
+  <export>
+    <rqt_gui plugin="${prefix}/plugin.xml"/>
+  </export>
+</package>

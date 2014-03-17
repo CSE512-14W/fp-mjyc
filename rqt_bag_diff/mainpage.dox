@@ -1,0 +1,7 @@
+/**
+\mainpage
+\htmlinclude manifest.html
+
+\b rqt_bag_diff provides a GUI plugin for performing diff like operations with ROS bag files.
+
+*/
