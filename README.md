@@ -1,6 +1,6 @@
 Project Name
 ===============
-Michael Jae-Yoon Chung {mjyc}@cs.washington.edu
+Michael Jae-Yoon Chung mjyc@cs.washington.edu
 
 ![Overview](overview.png)
 
@@ -8,8 +8,7 @@ Michael Jae-Yoon Chung {mjyc}@cs.washington.edu
 [Final Paper](https://github.com/CSE512-14W/fp-mjyc/gh-pages/master/final/paper-mjyc.pdf)
 
 ## Research/Development Process
-
-
+Initially, I wanted to use my assignment3 as a starting point of the final project.  I wanted to make a web-interface that is capable of displaying on-board sensor data in real-time.  However, I wasn't sure about the main purpose of such visualization tool.  After couple of brainstorming sessions, I concluded that the visualization tool that supports sensor data inspection and comparison would be very useful.  So I started to analyze widely used tools such as [rviz](http://wiki.ros.org/rviz) and [rqt_bag](http://wiki.ros.org/rqt_bag), and tried to improve it to better support sensor data inspection and comparason.
 
 ## Running Instructions
 
