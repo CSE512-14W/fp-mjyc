@@ -1,23 +1,36 @@
 Project Name
 ===============
-Jeffrer Heer, Kanit Wongsuphasawat {jheer,kanitw}@uw.edu
-
+Michael Jae-Yoon Chung {mjyc}@cs.washington.edu
 
 ![Overview](overview.png)
 
-This is an example repository for the final project submission.  Put your abstract from your final paper here.
+[Poster](https://github.com/CSE512-14W/fp-mjyc/raw/gh-pages/final/poster-mjyc.pdf),
+[Final Paper](https://github.com/CSE512-14W/fp-mjyc/gh-pages/master/final/paper-mjyc.pdf)
 
-[Poster](https://github.com/CSE512-14W/fp-jheer-kanitw/raw/master/final/poster-jheer-kanitw.pdf),
-[Final Paper](https://github.com/CSE512-14W/fp-jheer-kanitw/raw/master/final/paper-jheer-kanitw.pdf) 
+## Research/Development Process
 
-(Acknowledgement: example overview picture from Mike Bostock's Protovis)
+
 
 ## Running Instructions
 
-Put your running instructions here.  (Tell us how to open your visualization.) 
+My code is heavily relying on [ROS](http://ros.org/).  First, you will need to install [ROS Hydro](http://wiki.ros.org/hydro/Installation) on your machine.  Theoratically, ROS can be installed on various platforms, however, it works the best with Ubuntu platform.  Therefore, I only have tested my code using Ubuntu machines.
 
-If your visualization is web-based,  it would be great if your submissions can be opened online. [Github Pages](http://pages.github.com/) is a good and easy way to put your visualization online so you can put your link here.  For example:
+Once ROS is installed, you will need to setup your ROS environment as shown [here](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment).  You can now run follow commands from a terminal to build rqt_bag_diff and launch roscore.
 
-Access our visualization at http://cse512-14w.github.io/fp-jheer-kanitw/ or download this repository and run `python -m SimpleHTTPServer 9000` and access this from http://localhost:9000/.
+```
+git clone https://github.com/CSE512-14W/fp-mjyc
+cp fp-mjyc/rqt_bag_diff ~/catkin_ws/src/
+cd ~/catkin_ws/
+catkin_make
+roscore
+```
 
-(If you put your work online, please also write [one-line description and put a link to your final work](http://note.io/1n3u46s) so people can access it directly from CSE512-14W page.)
+Finally run below command to launch rqt_bag_diff from another terminal.
+
+```
+python ~/catkin_ws/src/rqt_bag_diff/scripts/rqt_bag_diff
+```
+
+You can load any [.bag formatted data](http://wiki.ros.org/Bags) you want to analyze using the load GUI button on the upper-left corner of the interface.  If you don't have any .bag formatted data, you can download the example I used during CSE512 poster session [here]() (WARNING: 13gb file).
+
+Please see the finals paper for the detailed usage explanations.
