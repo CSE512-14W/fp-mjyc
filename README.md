@@ -30,6 +30,6 @@ Finally run below command to launch rqt_bag_diff from another terminal.
 python ~/catkin_ws/src/rqt_bag_diff/scripts/rqt_bag_diff
 ```
 
-You can load any [.bag formatted data](http://wiki.ros.org/Bags) you want to analyze using the load GUI button on the upper-left corner of the interface.  If you don't have any .bag formatted data, you can download the example I used during CSE512 poster session [here]() (WARNING: 13gb file).
+You can load any [.bag formatted data](http://wiki.ros.org/Bags) you want to analyze using the load GUI button on the upper-left corner of the interface.  If you don't have any .bag formatted data, you can download the example I used during CSE512 poster session [here](http://www.cs.washington.edu/homes/mjyc/shared/cse512-final/test_data2_rerecorded.bag) (WARNING: 13gb file).
 
 Please see the finals paper for the detailed usage explanations.
