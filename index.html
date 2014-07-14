@@ -53,9 +53,13 @@ roscore</code></pre>
 
       <code><pre>python ~/catkin_ws/src/rqt_bag_diff/scripts/rqt_bag_diff</pre></code>
 
-      <p>You can load any <a href="http://wiki.ros.org/Bags"> .bag formatted data </a> you want to analyze using the load GUI button on the upper-left corner of the interface. If you don't have any .bag formatted data, you can download the example I used during CSE512 poster session <a href="https://github.com/CSE512-14W/fp-mjyc/blob/gh-pages"> here</a> (WARNING: 13gb file).</p>
+      <p>You can load any <a href="http://wiki.ros.org/Bags"> .bag formatted data </a> you want to analyze using the load GUI button on the upper-left corner of the interface.
 
       <p>Please see the finals paper for the detailed usage explanations.</p>
+
+      <h2>Limitations</h2>
+      <p> Due to the heck I used (see <a href="https://github.com/CSE512-14W/fp-mjyc/blob/gh-pages/rqt_bag_diff/src/rqt_bag_diff/bag_widget.py">bag_widget.py</a>), you need to have "some_sensor_data.bag" file as well as the copy of that file with filename "some_sensor_data (copy).bag" </p>
+      <p> The biggest limitation of rqt_bag_diff is how the program is currently managing "time". Timestamps from two data sources can be different, this can be problematic for ROS based viewers such as rviz and rqt_plot. </p>
 
       <h2>Materials</h2>
       <div class="links">

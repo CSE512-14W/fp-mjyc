@@ -30,6 +30,10 @@ Finally run below command to launch rqt_bag_diff from another terminal.
 python ~/catkin_ws/src/rqt_bag_diff/scripts/rqt_bag_diff
 ```
 
-You can load any [.bag formatted data](http://wiki.ros.org/Bags) you want to analyze using the load GUI button on the upper-left corner of the interface.  If you don't have any .bag formatted data, you can download the example I used during CSE512 poster session [here](http://www.cs.washington.edu/homes/mjyc/shared/cse512-final/test_data2_rerecorded.bag) (WARNING: 13gb file).
+You can load any [.bag formatted data](http://wiki.ros.org/Bags) you want to analyze using the load GUI button on the upper-left corner of the interface.
 
 Please see the finals paper for the detailed usage explanations.
+
+## Limitations
+* Due to the heck I used (see [bag_widget.py](https://github.com/CSE512-14W/fp-mjyc/blob/gh-pages/rqt_bag_diff/src/rqt_bag_diff/bag_widget.py)), you need to have "some_sensor_data.bag" file as well as the copy of that file with filename "some_sensor_data (copy).bag".
+* The biggest limitation of rqt_bag_diff is how the program is currently managing "time". Timestamps from two data sources can be different, this can be problematic for ROS based viewers such as rviz and rqt_plot.
